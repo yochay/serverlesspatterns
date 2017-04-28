@@ -1,0 +1,26 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": ["post"],
+      "route": "Heroes/"
+      
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "queue",
+      "name": "outputQueueItem",
+      "queueName": "heors-api-async-dowork",
+      "connection": "AzureWebJobsDashboard",
+      "direction": "out"
+    }          
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "name": "myQueueItem",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "outqueue2",
+      "connection": "AzureWebJobsDashboard"
+    },
+    {
+      "type": "queue",
+      "name": "outputQueueItem",
+      "queueName": "outqueue3",
+      "connection": "AzureWebJobsDashboard",
+      "direction": "out"
+    },
+    {
+      "type": "queue",
+      "name": "errorQueueItem",
+      "queueName": "outqueue1",
+      "connection": "AzureWebJobsDashboard",
+      "direction": "out"
+    }         
+  ]
+}

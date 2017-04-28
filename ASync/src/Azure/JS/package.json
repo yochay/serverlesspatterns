@@ -1,0 +1,14 @@
+{
+  "name": "asyncfunc",
+  "version": "1.0.0",
+  "description": "ASync HTTP Response (202) Pattern",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yochay Kiriaty",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^3.0.1"
+  }
+}
